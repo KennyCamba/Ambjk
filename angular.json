@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "Ambjk"
+    }
+  },
+  "defaultProject": "Ambjk",
+  "cli": {
+    "analytics": "c9a4883b-ea29-4a86-ae06-00bf95672399"
+  }
 }
