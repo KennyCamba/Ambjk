@@ -1,0 +1,8 @@
+<div *ngFor="let row of values; index as i">
+    <div class="row justify-content-center">
+        <ng-container *ngFor="let item of matriz[i]">
+            <app-grid-item class="col-auto text-center" [text]="item.text" [image]="item.img"></app-grid-item>
+        </ng-container>
+    </div>
+    <br>
+</div>

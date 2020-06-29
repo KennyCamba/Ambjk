@@ -5,14 +5,21 @@
   width: 500px;
   padding: 2em;
 }
+
 </style>
 
 <div>
 <app-menu></app-menu>
+<br>
+<br>
+<br>
 <div>
   <app-carousel [slides]="slides"></app-carousel>
 </div>
 </div>
-
+<h4 class="text-center">Productos Destacados</h4>
+<app-grid class="text-center d-block d-sm-none text-center" [items]="items" [cols]="2"></app-grid>
+<app-grid class="text-center d-none d-sm-block text.center" [items]="items" [cols]="3"></app-grid>
+<h4 class="text-center">Tiendas Destacadas</h4>
 
 <router-outlet></router-outlet>

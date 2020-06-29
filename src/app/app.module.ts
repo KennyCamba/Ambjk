@@ -8,13 +8,17 @@ import { AppComponent } from './app.component';
 import { MenuComponent } from './menu/menu.component';
 import { CarouselComponent } from './carousel/carousel.component';
 import { SlideComponent } from './slide/slide.component';
+import { GridComponent } from './grid/grid.component';
+import { GridItemComponent } from './grid-item/grid-item.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     MenuComponent,
     CarouselComponent,
-    SlideComponent
+    SlideComponent,
+    GridComponent,
+    GridItemComponent
   ],
   imports: [
     BrowserModule,
