@@ -1,5 +1,5 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
-  <a class="navbar-brand" href="#">
+  <a class="navbar-brand" routerLink="/" (click)="disableLinks()">
     <img src="assets/images/logo.svg"/>
   </a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -8,23 +8,16 @@
 
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
-      <li class="nav-item active">
-        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      <li class="nav-item" id="home" (click)="activeLink('home')">
+        <a class="nav-link" routerLink="/">Home <span class="sr-only">(current)</span></a>
       </li>
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Tiendas
-        </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="#">Niños</a>
-          <a class="dropdown-item" href="#">Mujer</a>
-          <a class="dropdown-item" href="#">Hombre</a>
-        </div>
+      <li class="nav-item" id="shops" (click)="activeLink('shops')" [ngClass]="{'active': isActive('shops')}">
+        <a class="nav-link" routerLink="shops">Tiendas</a>
       </li>
-      <li class="nav-item">
+      <li class="nav-item" id="promo" (click)="activeLink('promo')">
         <a class="nav-link" href="#">Promociones</a>
       </li>
-      <li class="nav-item">
+    <li class="nav-item" id="about_us" (click)="activeLink('about_us')">
         <a class="nav-link" href="#">Sobre nosotros</a>
       </li>
     </ul>

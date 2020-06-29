@@ -11,6 +11,8 @@ import { SlideComponent } from './slide/slide.component';
 import { GridComponent } from './grid/grid.component';
 import { GridItemComponent } from './grid-item/grid-item.component';
 import { FooterComponent } from './footer/footer.component';
+import { HomeComponent } from './home/home.component';
+import { ShopsComponent } from './shops/shops.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +22,9 @@ import { FooterComponent } from './footer/footer.component';
     SlideComponent,
     GridComponent,
     GridItemComponent,
-    FooterComponent
+    FooterComponent,
+    HomeComponent,
+    ShopsComponent
   ],
   imports: [
     BrowserModule,

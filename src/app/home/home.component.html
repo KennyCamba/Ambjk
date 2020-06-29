@@ -1,0 +1,13 @@
+<div>
+  <app-carousel></app-carousel>
+</div>
+<br>
+<h4 class="text-center">Productos Destacados</h4>
+<br>
+<app-grid class="text-center d-block d-sm-none text-center" [items]="items" [cols]="2"></app-grid>
+<app-grid class="text-center d-none d-sm-block text.center" [items]="items" [cols]="3"></app-grid>
+<br>
+<h4 class="text-center">Tiendas Destacadas</h4>
+<br>
+<app-grid class="text-center d-block d-sm-none text-center" [items]="stores" [cols]="2"></app-grid>
+<app-grid class="text-center d-none d-sm-block text.center" [items]="stores" [cols]="3"></app-grid>
