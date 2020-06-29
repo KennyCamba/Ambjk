@@ -10,16 +10,24 @@
 
 <div>
 <app-menu></app-menu>
-<br>
-<br>
-<br>
+<div class="d-none d-xl-block d-none d-lg-block d-xl-none">
+  <br>
+  <br>
+  <br>
+</div>
 <div>
-  <app-carousel [slides]="slides"></app-carousel>
+  <app-carousel></app-carousel>
 </div>
 </div>
+<br>
 <h4 class="text-center">Productos Destacados</h4>
+<br>
 <app-grid class="text-center d-block d-sm-none text-center" [items]="items" [cols]="2"></app-grid>
 <app-grid class="text-center d-none d-sm-block text.center" [items]="items" [cols]="3"></app-grid>
+<br>
 <h4 class="text-center">Tiendas Destacadas</h4>
-
+<br>
+<app-grid class="text-center d-block d-sm-none text-center" [items]="stores" [cols]="2"></app-grid>
+<app-grid class="text-center d-none d-sm-block text.center" [items]="stores" [cols]="3"></app-grid>
+<app-footer></app-footer>
 <router-outlet></router-outlet>

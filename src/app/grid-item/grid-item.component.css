@@ -1,3 +1,24 @@
-.card-custom {
+@media (min-width: 240px) {
+  .card-custom {
+    width: 8rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .card-custom {
+    width: 10rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .card-custom {
     width: 12rem;
+  }
+}
+
+
+@media (min-width: 1200px) {
+  .card-custom {
+    width: 15rem;
+  }
 }

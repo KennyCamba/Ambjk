@@ -7,36 +7,54 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Ambik';
-  public slides = [
-    { src: 'assets/images/box_1_img.jpg' },
-    { src: 'assets/images/box_2_img.jpg' },
-    { src: 'assets/images/box_1_img.jpg' },
-    { src: 'assets/images/box_1_img.jpg' }
-  ];
+
   public items = [
     {
-      img: "assets/images/product_1.jpg",
-      text: "$6.99"
+      img: 'assets/images/product_1.jpg',
+      text: '$26.99'
     },
     {
-      img: "assets/images/product_2.jpg",
-      text: "$20.99"
+      img: 'assets/images/product_5.jpg',
+      text: '$20.99'
     },
     {
-      img: "assets/images/product_3.jpg",
-      text: "$32.99"
+      img: 'assets/images/product_6.jpg',
+      text: '$32.99'
     },
     {
-      img: "assets/images/product_4.jpg",
-      text: "$15.99"
+      img: 'assets/images/product4.jpg',
+      text: '$15.99'
     },
     {
-      img: "assets/images/product_5.jpg",
-      text: "$16.99"
+      img: 'assets/images/product3.jpg',
+      text: '$16.99'
     },
     {
-      img: "assets/images/product_6.jpg",
-      text: "$9.99"
+      img: 'assets/images/product1.jpg',
+      text: '$19.99'
     }
-  ]
+  ];
+
+  public stores = [
+    {
+      img: 'assets/images/store5.jpg',
+      text: 'irmao'
+    },
+    {
+      img: 'assets/images/store4.jpg',
+      text: 'De Prati'
+    },
+    {
+      img: 'assets/images/store2.jpg',
+      text: 'Bahía'
+    },
+    {
+      img: 'assets/images/store3.jpg',
+      text: 'Posdata'
+    },
+    {
+      img: 'assets/images/store1.jpg',
+      text: 'Avenue Boutique'
+    },
+  ];
 }

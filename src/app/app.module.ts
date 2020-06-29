@@ -10,6 +10,7 @@ import { CarouselComponent } from './carousel/carousel.component';
 import { SlideComponent } from './slide/slide.component';
 import { GridComponent } from './grid/grid.component';
 import { GridItemComponent } from './grid-item/grid-item.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { GridItemComponent } from './grid-item/grid-item.component';
     CarouselComponent,
     SlideComponent,
     GridComponent,
-    GridItemComponent
+    GridItemComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
@@ -26,6 +28,7 @@ import { GridItemComponent } from './grid-item/grid-item.component';
     BrowserAnimationsModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  exports: [FooterComponent]
 })
 export class AppModule { }

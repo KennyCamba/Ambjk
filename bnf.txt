@@ -1,0 +1,5 @@
+<tag> ::= "<a" <atributo> ">" <valor> "</a>"  
+<atributo> ::= " " <nombre> "='" <valor> "'" | <atributo>  <atributo>  
+<nombre> ::= "href" | "class" | "id" | "target" | "download"  
+<valor> ::= <caracter> | <valor> <valor>  
+<caracter> ::= [a-z] | [A-Z]  | [0-9] | ":" | "-" | "." | "/" | "#" | " "   
