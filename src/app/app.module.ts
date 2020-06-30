@@ -13,6 +13,8 @@ import { GridItemComponent } from './grid-item/grid-item.component';
 import { FooterComponent } from './footer/footer.component';
 import { HomeComponent } from './home/home.component';
 import { ShopsComponent } from './shops/shops.component';
+import { TabMapComponent } from './tab-map/tab-map.component';
+import { FilteredMapComponent } from './filtered-map/filtered-map.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +26,9 @@ import { ShopsComponent } from './shops/shops.component';
     GridItemComponent,
     FooterComponent,
     HomeComponent,
-    ShopsComponent
+    ShopsComponent,
+    TabMapComponent,
+    FilteredMapComponent
   ],
   imports: [
     BrowserModule,

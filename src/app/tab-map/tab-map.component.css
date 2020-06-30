@@ -1,0 +1,22 @@
+a {
+  color: gray;
+  font-size: 1.5rem;
+  -webkit-transition: none;
+  transition: none;
+}
+
+a.nav-link.active {
+  background-color: rgba(0, 0, 0, 0);
+  border: 0px;
+  text-decoration-color: #45526e;
+  text-decoration-line: underline;
+  text-decoration-style: solid;
+}
+
+a.nav-link:hover, a.nav-link:visited {
+  border: 0px;
+}
+
+iframe {
+  width: 100%;
+}

@@ -1,0 +1,23 @@
+<iframe [src]="url" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+<ul class="nav nav-tabs justify-content-center">
+  <li class="nav-item">
+    <a class="nav-link active" id="all" (click)="activeLink('all', 'ropa')">Todo</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" id="general" (click)="activeLink('general', 'ropa de hombre y de mujer')">General</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" id="men" (click)="activeLink('men', 'ropa de hombre')">Hombre</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" id="women" (click)="activeLink('women', 'ropa de mujer')">Mujer</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" id="child" (click)="activeLink('child', 'ropa de niño')">Niño</a>
+  </li>
+</ul>
+<br>
+<div>
+  <app-grid [items]="stores" cols="3" #grid></app-grid>
+</div>
+
