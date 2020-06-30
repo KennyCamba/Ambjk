@@ -14,6 +14,7 @@ export class TabMapComponent implements OnInit {
   public url: SafeUrl;
   public stores: any;
   @ViewChild('grid') grid: GridComponent;
+  @ViewChild('gridm') gridm: GridComponent;
   public all = [
     {
       img: 'assets/images/store5.jpg',
@@ -71,6 +72,7 @@ export class TabMapComponent implements OnInit {
     this.tpd = id;
     this.updateMap();
     this.grid.update(this.getByType(id));
+    this.gridm.update(this.getByType(id));
     this.disableLinks();
     document.getElementById(id).classList.add('active');
   }

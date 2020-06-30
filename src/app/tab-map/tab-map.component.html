@@ -17,7 +17,6 @@
   </li>
 </ul>
 <br>
-<div>
-  <app-grid [items]="stores" cols="3" #grid></app-grid>
-</div>
+<app-grid class="text-center d-block d-sm-none text-center" [items]="stores" [cols]="2" #gridm></app-grid>
+<app-grid class="text-center d-none d-sm-block text.center" [items]="stores" [cols]="3" #grid></app-grid>
 
